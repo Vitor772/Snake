@@ -75,10 +75,34 @@
 
 
             }
+            function keyPush(){
+                switch (event.keyCode) {
+                    case 37:
+                        vx = -vel
+                        vy = 0
+                    break;
+                    case 38:
+                        vx = 0
+                        vy = -vel 
+                    break;
+                    case 39:
+                        vx = vel
+                        vy = 0
+                    break;
+                    case 40:
+                         vx = 0
+                         vy = vel
+                    break;
+                    default:
+                        break;
+                }
+            }
+
+            }
 
           
 
-            }
+            
         
 
 
